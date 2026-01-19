@@ -21,7 +21,7 @@ Due to the NP-hard nature of the problem and the rapid growth in computational c
    - Formulation of the CVRP variant with additional vehicle constraints.
    - Definition of variables, constraints, and objective function.
 
-2. [**Exact Implementation (IBM CPLEX)**](Model/cplex_model.lp)
+2. [**Exact Implementation (IBM CPLEX)**](Model/cvrp_model.mod)
    - Model solved exactly on small to medium instances.
    - Provides baseline solutions and validation.
 
