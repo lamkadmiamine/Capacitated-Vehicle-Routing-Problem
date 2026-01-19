@@ -33,10 +33,10 @@ The metaheuristic follows a standard **Tabu Search framework**:
 ```text
 metaheuristic/
 │
-├─ data_loader.py        # Load CVRP instances from Excel files
-├─ solution.py           # Solution representation and feasibility checks
-├─ cost.py               # Objective function evaluation
-├─ neighborhood.py       # Neighbor generation operators
-├─ tabu_search.py        # Tabu Search algorithm
-└─ main.py               # Execution script and experiments
+├─ data_loader.py              # Load CVRP instances from Excel files
+├─ solution_validation.py      # Solution representation and feasibility checks
+├─ cost.py                     # Objective function evaluation
+├─ neighborhood.py             # Neighbor generation operators
+├─ tabu_search.py              # Tabu Search algorithm
+└─ main.py                     # Execution script and experiments
 
