@@ -7,30 +7,30 @@ The objective is to **minimize total cost**, including fixed vehicle costs and p
 
 ## Sets and Parameters
 
-- **C** – set of clients, \(C = \{1,2,\dots,n\}\)  
+- **C** – set of clients, (C = {1,2, ...,n})  
 - **VL** – set of long-term vehicles  
 - **VS** – set of short-term vehicles  
-- **N** – set of nodes, \(N = \{0\} \cup C\), where 0 is the depot  
-- **dj** – demand of client \(j \in C\)  
-- **capk** – capacity of vehicle \(k \in VL\)  
-- **disti,j** – distance between nodes \(i,j \in N\)  
-- **Spk** – speed of vehicle \(k \in VL\)  
-- **Fck** – fixed cost for vehicle \(k \in VL \cup VS\)  
-- **over_timek** – cost per unit of time exceeded for vehicle \(k \in VL\)  
-- **over_distancek** – cost per unit of distance exceeded for vehicle \(k \in VL\)  
-- **soft_timek** – soft time limit for vehicle \(k \in VL\)  
-- **hard_timek** – hard time limit for vehicle \(k \in VL\)  
-- **max_distancek** – maximum distance allowed for vehicle \(k \in VL\)  
+- **N** – set of nodes, (N = {0} UNION C), where 0 is the depot  
+- **dj** – demand of client (j in C)  
+- **capk** – capacity of vehicle (k in VL)  
+- **disti,j** – distance between nodes ((i,j) in N)  
+- **Spk** – speed of vehicle (k in VL)  
+- **Fck** – fixed cost for vehicle (k in VL UNION VS)  
+- **over_timek** – cost per unit of time exceeded for vehicle (k in VL)  
+- **over_distancek** – cost per unit of distance exceeded for vehicle (k in VL)  
+- **soft_timek** – soft time limit for vehicle (k in VL)  
+- **hard_timek** – hard time limit for vehicle (k in VL)  
+- **max_distancek** – maximum distance allowed for vehicle (k in VL)  
 
 ---
 
 ## Decision Variables
 
-- \(x_{i,j,k} \in \{0,1\}\) – 1 if long-term vehicle \(k \in VL\) travels arc \((i,j)\)  
-- \(y_{j,k} \in \{0,1\}\) – 1 if short-term vehicle \(k \in VS\) serves client \(j\)  
-- \(u_{i,k} \in \mathbb{R}^+\) – continuous variable for **subtour elimination (MTZ)** for client \(i \in C\) and vehicle \(k \in VL\)  
-- \(over\_time\_long_k \in \mathbb{R}^+\) – time exceeded by long-term vehicle \(k\)  
-- \(over\_distance\_long_k \in \mathbb{R}^+\) – distance exceeded by long-term vehicle \(k\)  
+- x_{i,j,k} in {0,1} – 1 if long-term vehicle k in **VL** travels arc (i,j)  
+- y_{j,k} in {0,1} – 1 if short-term vehicle k in **VS** serves client (j)  
+- u_{i,k} in R^+ – continuous variable for **subtour elimination (MTZ)** for client i in **C** and vehicle k in **VL**  
+- over_time_long_k in R^+ – time exceeded by long-term vehicle k  
+- over_distance_long_k in R^+ – distance exceeded by long-term vehicle k  
 
 ---
 
