@@ -7,6 +7,9 @@ This project addresses a practical variant of the Capacitated Vehicle Routing Pr
 
 The focus is on optimizing route planning while balancing operational constraints and cost efficiency, providing actionable insights for logistics and distribution management.
 
+## Problem 
+Describe the prb
+
 ## Project Workflow
 
 1. **Mathematical Modeling**
