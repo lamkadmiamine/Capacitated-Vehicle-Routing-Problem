@@ -37,7 +37,7 @@ The objective is to **minimize total cost**, including fixed vehicle costs and p
 ## Objective Function
 
 <div align="center">
-  <img src="https://github.com/lamkadmiamine/Capacitated-Vehicle-Routing-Problem/blob/main/assets/FonctionObjectif.png" alt="CVRP" width="500" height="300">
+  <img src="https://github.com/lamkadmiamine/Capacitated-Vehicle-Routing-Problem/blob/main/assets/FonctionObjectif.png" alt="CVRP" width="700" height="500">
 </div>
 
 ---
@@ -45,7 +45,7 @@ The objective is to **minimize total cost**, including fixed vehicle costs and p
 ## Constraints
 
 <div align="center">
-  <img src="assets/Contraintes.png" alt="CVRP" width="500" height="300">
+  <img src="https://github.com/lamkadmiamine/Capacitated-Vehicle-Routing-Problem/blob/main/assets/Contraintes.png" alt="CVRP" width="700" height="500">
 </div>
 ---
 
