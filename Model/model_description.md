@@ -36,63 +36,17 @@ The objective is to **minimize total cost**, including fixed vehicle costs and p
 
 ## Objective Function
 
-Minimize total cost:  
-
-\[
-\min \sum_{k \in VL} \sum_{j \in C} F_{c,k} \, x_{0,j,k} +
-\sum_{k \in VS} \sum_{j \in C} F_{c,k} \, y_{j,k} +
-\sum_{k \in VL} over\_time_k \cdot over\_time\_long_k +
-\sum_{k \in VL} over\_distance_k \cdot over\_distance\_long_k
-\]
+<div align="center">
+  <img src="assets/FonctionObjectif.png" alt="CVRP" width="500" height="300">
+</div>
 
 ---
 
 ## Constraints
 
-1. **Service constraint** – every client is visited exactly once:  
-
-\[
-\sum_{i \in N, i \neq j} x_{i,j,k} + \sum_{k \in VS} y_{j,k} = 1, \quad \forall j \in C
-\]
-
-2. **Vehicle capacity** – long-term vehicle does not exceed capacity:  
-
-\[
-\sum_{i \in N, i \neq j} d_j \, x_{i,j,k} \le cap_k, \quad \forall k \in VL
-\]
-
-3. **Flow conservation** – vehicle leaves each client it visits:  
-
-\[
-\sum_{i \in N, i \neq j} x_{i,j,k} = \sum_{i \in N, i \neq j} x_{j,i,k}, \quad \forall k \in VL, \forall j \in C
-\]
-
-4. **Subtour elimination (MTZ)** – ensures continuous tours:  
-
-\[
-u_{i,k} - u_{j,k} + (|C| - 1) x_{i,j,k} \le |C| - 2, \quad \forall k \in VL, \forall i,j \in C, i \neq j
-\]
-
-5. **Time constraints** – long-term vehicle respects soft and hard time limits:  
-
-\[
-\sum_{i,j \in N, i \neq j} \frac{dist_{i,j}}{speed_k} x_{i,j,k} \le soft\_time_k + over\_time\_long_k
-\]
-
-\[
-\sum_{i,j \in N, i \neq j} \frac{dist_{i,j}}{speed_k} x_{i,j,k} \le hard\_time_k
-\]
-
-6. **Distance constraints** – maximum distance for long- and short-term vehicles:  
-
-\[
-\sum_{i,j \in N, i \neq j} dist_{i,j} x_{i,j,k} \le max\_distance_k + over\_distance\_long_k, \quad \forall k \in VL
-\]
-
-\[
-\sum_{i,j \in N, i \neq j} dist_{i,j} x_{i,j,k} \le max\_distance_k, \quad \forall k \in VS
-\]
-
+<div align="center">
+  <img src="assets/Contraintes.png" alt="CVRP" width="500" height="300">
+</div>
 ---
 
 ## Notes
