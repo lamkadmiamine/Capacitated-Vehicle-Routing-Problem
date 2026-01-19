@@ -12,18 +12,15 @@ The comparison is performed on multiple datasets with increasing problem sizes.
 
 ### Performance Comparison
 
-| Dataset (Clients) | Method | Time (min) | Time (s) | Final Gap (%) | Lower Bound | Upper Bound | Cost |
-|-------------------|--------|------------|----------|---------------|-------------|-------------|------|
-| 10 clients | PLNE | 0 | – | 0 | 700.40 | 700.40 | 700.40 |
-| 10 clients | Heuristic | – | 17.34 | 0 | – | – | 700.40 |
-| 15 clients | PLNE | 2.66 | – | 0 | 839.21 | 884.81 | 884.81 |
-| 15 clients | Heuristic | – | 97.40 | 0 | – | – | 884.81 |
-| 20 clients | PLNE | 15 | – | 0 | 685.30 | 781.36 | 781.36 |
-| 20 clients | Heuristic | – | 138.06 | 0 | – | – | 781.36 |
-| 50 clients | PLNE | 15 | – | 34.78 | – | – | – |
-| 50 clients | Heuristic | – | 70.19 | – | – | – | 300.00 |
-| 100 clients | PLNE | 15 | – | 41.53 | – | – | – |
-| 100 clients | Heuristic | – | 91.59 | – | – | – | 760.00 |
+| Datasets    | **PLNE**   |               |             |             | **Heuristic** |               |          |
+| ----------- | ---------- | ------------- | ----------- | ----------- | ------------- | ------------- | -------- |
+|             | Time (min) | Final Gap (%) | Lower Bound | Upper Bound | Time (s)      | Final Gap (%) | Cost     |
+| 10 Clients  | 0          | 0             | 700.3996    | 700.3996    | 17.34         | 0             | 700.3996 |
+| 15 Clients  | 2.66       | 1.41          | 839.2142    | 884.8103    | 97.40         | 0             | 884.8103 |
+| 20 Clients  | 15         | 39.57         | 685.2952    | 781.3593    | 138.06        | 0             | 781.3593 |
+| 50 Clients  | 15         | 100           | 0           | 460         | 70.19         | 34.78         | 300.0    |
+| 100 Clients | 15         | 100           | 0           | 1300        | 91.59         | 41.53         | 760.0    |
+
 
 **Table 1 – Performance comparison of PLNE and heuristic approaches across different datasets**
 
