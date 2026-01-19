@@ -11,6 +11,10 @@ The objective is to minimize the total operational cost, which includes fixed ve
 
 Due to the NP-hard nature of the problem and the rapid growth in computational complexity as instance sizes increase, exact optimization methods become impractical for large-scale instances. As a result, the project combines exact mathematical programming (PLNE) for small to medium instances with a metaheuristic approach (Tabu Search) to efficiently address larger problem sizes.
 
+<div align="center">
+  <img src="assets/CVRP.png" alt="CVRP" width="500" height="300">
+</div>
+
 ## Project Workflow
 
 1. **Mathematical Modeling**
@@ -24,10 +28,6 @@ Due to the NP-hard nature of the problem and the rapid growth in computational c
 3. **Metaheuristic Approach (Tabu Search)**
    - Applied to larger instances where exact methods become computationally expensive.
    - Focus on solution quality and computation time trade-off.
-
-<div align="center">
-  <img src="assets/CVRP.png" alt="CVRP" width="500" height="300">
-</div>
 
 
 
