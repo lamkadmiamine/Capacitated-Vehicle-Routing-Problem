@@ -45,7 +45,7 @@ The objective is to **minimize total cost**, including fixed vehicle costs and p
 ## Constraints
 
 <div align="center">
-  <img src="https://github.com/lamkadmiamine/Capacitated-Vehicle-Routing-Problem/blob/main/assets/contraintes.png" alt="CVRP" width="700" height="500">
+  <img src="https://github.com/lamkadmiamine/Capacitated-Vehicle-Routing-Problem/blob/main/assets/contraintes.png" alt="CVRP" width="550" height="500">
 </div>
 ---
 
