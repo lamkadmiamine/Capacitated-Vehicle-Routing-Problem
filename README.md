@@ -17,17 +17,18 @@ Due to the NP-hard nature of the problem and the rapid growth in computational c
 
 ## Project Workflow
 
-1. **Mathematical Modeling**
+1. [**Mathematical Modeling**](Model/model_description.md)
    - Formulation of the CVRP variant with additional vehicle constraints.
    - Definition of variables, constraints, and objective function.
 
-2. **Exact Implementation (IBM CPLEX)**
+2. [**Exact Implementation (IBM CPLEX)**](Model/cplex_model.lp)
    - Model solved exactly on small to medium instances.
    - Provides baseline solutions and validation.
 
-3. **Metaheuristic Approach (Tabu Search)**
+3. [**Metaheuristic Approach (Tabu Search)**](metaheuristic/tabu_search.py)
    - Applied to larger instances where exact methods become computationally expensive.
    - Focus on solution quality and computation time trade-off.
+
 
 
 
