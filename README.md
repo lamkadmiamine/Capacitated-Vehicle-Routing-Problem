@@ -7,5 +7,5 @@ This project addresses a practical variant of the Capacitated Vehicle Routing Pr
 
 The focus is on optimizing route planning while balancing operational constraints and cost efficiency, providing actionable insights for logistics and distribution management.
 
-![CVRP](\assets\CVRP.png)
+![CVRP](assets\CVRP.png)
 
